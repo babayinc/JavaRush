@@ -215,8 +215,8 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level14/lesson08/bonus01/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.6989247">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -240,7 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/javarush/test/level18/lesson03/task05/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level18/lesson05/task01/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level18/lesson05/task02/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level18/lesson05/task03/Solution.java" />
@@ -291,6 +290,7 @@
         <option value="$PROJECT_DIR$/src/com/javarush/test/level19/lesson10/home10/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level19/lesson10/bonus01/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/javarush/test/level18/lesson08/task02/AmigoOutputStream.java" />
+        <option value="$PROJECT_DIR$/src/com/javarush/test/level14/lesson08/bonus01/Solution.java" />
       </list>
     </option>
   </component>
@@ -866,7 +866,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427814948344</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="test">
+      <created>1427814954006</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1427814954006</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1387,8 +1393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/javarush/test/level14/lesson08/bonus01/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.6989247">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
