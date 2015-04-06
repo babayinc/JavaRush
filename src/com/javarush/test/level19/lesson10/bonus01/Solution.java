@@ -42,31 +42,46 @@ public class Solution {
         BufferedReader fileReader2 = new BufferedReader(new FileReader(filename2));
         ArrayList<String> list1 = new ArrayList<String>();
         String buffer;
-        while ((buffer = fileReader1.readLine()) != null){
-            list1.add(buffer);
-        }
+        while ((buffer = fileReader1.readLine()) != null) list1.add(buffer);
         ArrayList<String> list2 = new ArrayList<String>();
-        while ((buffer = fileReader2.readLine()) != null){
-            list2.add(buffer);
-        }
-        for (String temp : list1) {
-            lines.add(new LineItem(Type.REMOVED, temp));
-        }
-        for (String temp : list2){
-            boolean added = true;
-            for(LineItem lineItem : lines) {
-                if (temp.equals(lineItem.line)){
-                    lineItem.type = Type.SAME;
-                    added = false;
-                }
+        while ((buffer = fileReader2.readLine()) != null) list2.add(buffer);
+//        for (String temp : list1) {
+//            lines.add(new LineItem(Type.REMOVED, temp));
+//        }
+//        for (String temp : list2){
+//            boolean added = true;
+//            for(LineItem lineItem : lines) {
+//                if (temp.equals(lineItem.line)){
+//                    lineItem.type = Type.SAME;
+//                    added = false;
+//                }
+//            }
+//            if (added) lines.add(new LineItem(Type.ADDED, temp));
+
+        int count1 = 0;
+        int count2 = 0;
+
+        while (true) {
+            if (list1.get(count1).equals(list2.get(count2))){
+                lines.add(new LineItem(Type.SAME, list1.get(count1)));
+                if (count1 < list1.size() - 1) count1 ++;
+                if (count2 < list2.size() - 1) count2 ++;
+            } else {
+                if (count1 < list1.size() - 1 && list1.get(count1 +1).equals(list2.get(count2))) {
+                    lines.add(new LineItem(Type.REMOVED, list1.get(count1)));
+                    count1 ++;
+                } else if (count2 < list2.size() - 1 && list1.get(count1).equals(list2.get(count2 + 1))) {
+                    lines.add(new LineItem(Type.ADDED, list2.get(count2)));
+                    count2++;
+                } else if (count1 == list1.size() -1) {
+                    lines.add(new LineItem(Type.ADDED, list2.get(count2)));
+                    if (count2 < list2.size() - 1) count2 ++;
+                    else break;
+                }else break;
             }
-            if (added) lines.add(new LineItem(Type.ADDED, temp));
         }
 
-        for (LineItem lineItem : lines) {
-            System.out.println(lineItem.line + " " + lineItem.type);
-        }
-
+       // for (LineItem line : lines) System.out.println(line.line + " " + line.type);
     }
 
 
